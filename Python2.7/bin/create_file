@@ -1,0 +1,15 @@
+#!/bin/python
+
+file_name = raw_input("Please input a file name for saving content: ")
+
+with open(file_name, 'w') as f:
+    file_content = []
+
+    while True:
+        line = raw_input("Please input content of file: ")
+        if line:
+            file_content.append(line)
+        else:
+            break
+    text = '\n'.join(file_content)
+    f.write(text)

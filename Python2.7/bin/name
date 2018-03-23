@@ -1,0 +1,11 @@
+#!/bin/python
+
+first_name = 'Arseni'
+last_name = 'Dudko'
+age = 27
+birth_date = '7.05.1990'
+
+print("My name is %s %s\nI was born on %s and I'm %s years old.") % (first_name,
+                                                                     last_name,
+                                                                     birth_date,
+                                                                     age)
