@@ -7,7 +7,7 @@ words = [word.strip() for word in open('/usr/share/dict/words').readlines()]
 
 for identifier in range(count):
     amount = random.uniform(1.0, 1000)
-    content ={
+    content = {
         'topic': random.choice(words),
         'value': "%.2f" % amount
     }
