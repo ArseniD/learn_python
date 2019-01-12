@@ -1,0 +1,17 @@
+# Please run the following in python3 console in current folder
+from resolver import Resolver
+resolve = Resolver()
+resolve('tut.by')
+resolve.__call__('tut.by')
+resolve._cache
+resolve.clear()
+resolve._cache
+
+
+from timeit import timeit
+
+timeit(setup="from __main__ import resolve", stmt="resolve('python.org')", number=1)
+timeit(setup="from __main__ import resolve", stmt="resolve('python.org')", number=1) # should be return from a cache, time is less than in previous result
+
+# Print previous repr result in right format
+print("{:f}".format(_))
