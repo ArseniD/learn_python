@@ -1,0 +1,2 @@
+class SeatFinder:
+    pass
