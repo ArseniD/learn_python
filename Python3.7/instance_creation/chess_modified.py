@@ -26,10 +26,10 @@ class ChessCoordinate:
                 cls.__name__, rank))
 
         # Once the arguments are validated, we use them to create a single
-        # tuple objectfrom file and rank to use as a key, and check if there is
-        # an enty against this key tuple in a dictionary _interned, we attached
+        # tuple object from file and rank to use as a key, and check if there is
+        # an entry against this key tuple in a dictionary _interned, we attached
         # as a class attribute.
-        key = (file, rank)
+        key = (file, rank)  # 'd4'
 
         if key not in cls._interned:
             # Only if the tuple key is not present in the dictionary do we
@@ -99,6 +99,7 @@ def main():
     # ChessCoordinate with interning technique.
     # Creating 10000 chessboards dictionaries
     boards = [starting_board() for _ in range(10000)]
+    print(boards)
     pass
 
 
